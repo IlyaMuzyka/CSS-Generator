@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="generator">
+        <h1 class="generator__title">
+            CSS Generator
+        </h1>
+        <div class="generator__content">
+            <div class="generator__content-wrapper">
+                <div class="generator__content-top">
+                    <div class="generator__item">
+                        <input class="generator__input" id="top-left-input" type="range" min="0" max="100" value="0">
+                        <div class="generator__item-result" id="top-left-result">0</div>
+                    </div>
+                    <div class="generator__item">
+                        <input class="generator__input" id="top-right-input" type="range" min="0" max="100" value="0">
+                        <div class="generator__item-result" id="top-right-result">0</div>
+                    </div>
+                </div>
+                <div class="generator__content-middle">
+                    <div class="generator__cube" id="cube"></div>
+                </div>
+                <div class="generator__content-bottom">
+                    <div class="generator__item">
+                        <input class="generator__input" id="bottom-left-input" type="range" min="0" max="100" value="0">
+                        <div class="generator__item-result" id="bottom-left-result">0</div>
+                    </div>
+                    <div class="generator__item">
+                        <input class="generator__input" id="bottom-right-input" type="range" min="0" max="100" value="0">
+                        <div class="generator__item-result" id="bottom-right-result">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="generator__result">
+                <button class="generator__result-btn" id="btn">Вычислить результат</button>
+                <div class="generator__result-text">
+                    border-radius: <span id="total-result"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
